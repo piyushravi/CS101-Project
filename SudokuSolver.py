@@ -1,5 +1,6 @@
 #CS101 Project
-#Sudoku Solver USing Backtracking
+#Python 3.6
+#Sudoku Solver Using Backtracking
 
 import sys, os
 
@@ -114,8 +115,7 @@ for x in range(N):
     print('Completed Test Case '+str(x+1)+'!!\n')
     
         
-    
-        
+wfile.close()
     
         
     
