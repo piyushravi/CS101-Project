@@ -77,6 +77,12 @@ except:
     while filename=='' or not os.path.exists(filename):
         filename=input("Enter a valid input text filename:")
         
+'''
+The output file will be named as Result of [input_filename].
+The output file for every test case will have 9 lines which will contain 9 integer between 1 to 9, 
+denoting the values of cells in 9x9 sudoku in standard (rows)x(columns) format of matrices. 
+The program is not intended to check if a from a given possible constraints a sudoku can be formed or not.
+'''
 
 #Reading Input from the text file.
 with open(filename, 'r') as ifile:
