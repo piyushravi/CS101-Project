@@ -58,11 +58,9 @@ class irreducibleFractions:
     def getDeno(self):
         return self.deno
     
+
         
-        
-        
-    
-    
+           
 
 def equationSolver(sys_Eq, rows, cols):
     #Converting the augmented matrix sys_Eq to row reduced echleon form
@@ -139,7 +137,15 @@ try:
 except:
     while filename=='' or not os.path.exists(filename):
         filename=input("Enter a valid input text filename:")
+
         
+'''
+The output file will be named as Result of [input_filename].
+The output file for every test case will num_var lines if the system is consitent,
+otherwise it will state that the given sytem is inconsistent.
+If the system is consitent, ith of num_var lines will hold the value of x_ith variable.
+If x_ith variable is a free variable, it will x_ith is free.
+'''
 
 #Reading Input from the text file.
 with open(filename, 'r') as ifile:
