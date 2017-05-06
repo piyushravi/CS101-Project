@@ -1,0 +1,252 @@
+Currency Name	Currency Sign
+Afghan 	AFN
+Euro 	EUR
+Lek 	ALL
+Algerian Dinar 	DZD
+US Dollar 	USD
+Euro 	EUR
+Kwanza 	AOA
+East Caribbean Dollar 	XCD
+No universal 	currency
+East Caribbean Dollar 	XCD
+Argentine Peso 	ARS
+Armenian Dram 	AMD
+Aruban Florin 	AWG
+Australian Dollar 	AUD
+Euro 	EUR
+Azerbaijanian Manat 	AZN
+Bahamian Dollar 	BSD
+Bahraini Dinar 	BHD
+Taka 	BDT
+Barbados Dollar 	BBD
+Belarusian Ruble 	BYR
+Euro 	EUR
+Belize Dollar 	BZD
+CFA Franc BCEAO  	XOF
+Bermudian Dollar 	BMD
+Ngultrum 	BTN
+Boliviano 	BOB
+US Dollar 	USD
+Convertible Marks 	BAM
+Pula 	BWP
+Norwegian Krone 	NOK
+Brazilian Real 	BRL
+US Dollar 	USD
+Brunei Dollar 	BND
+Bulgarian Lev 	BGN
+CFA Franc BCEAO 	XOF
+Burundi Franc 	BIF
+Cabo Verde Escudo 	CVE
+Riel 	KHR
+CFA Franc BEAC  	XAF
+Canadian Dollar 	CAD
+Cayman Islands Dollar 	KYD
+CFA Franc BEAC  	XAF
+CFA Franc BEAC  	XAF
+Chilean Peso 	CLP
+Yuan Renminbi 	CNY
+Australian Dollar 	AUD
+Australian Dollar 	AUD
+Colombian Peso 	COP
+Comoro Franc 	KMF
+CFA Franc BEAC  	XAF
+Franc Congolais 	CDF
+New Zealand Dollar 	NZD
+Costa Rican Colon 	CRC
+CFA Franc BCEAO  	XOF
+Croatian Kuna 	HRK
+Cuban Peso 	CUP
+Netherlands Antillean Guilder 	ANG
+Cyprus Pound 	CYP
+Czech Koruna 	CZK
+Danish Krone 	DKK
+Djibouti Franc 	DJF
+East Caribbean Dollar 	XCD
+Dominican Peso 	DOP
+US Dollar 	USD
+Egyptian Pound 	EGP
+El Salvador Colon 	SVC
+CFA Franc BEAC  	XAF
+Nakfa 	ERN
+Euro 	EUR
+Ethiopian Birr 	ETB
+Euro 	EUR
+Falkland Islands Pound 	FKP
+Danish Krone 	DKK
+Fiji Dollar 	FJD
+Euro 	EUR
+Euro 	EUR
+Euro 	EUR
+CFP Franc 	XPF
+Euro 	EUR
+CFA Franc BEAC  	XAF
+Dalasi 	GMD
+Lari 	GEL
+Euro 	EUR
+Ghana Cedi 	GHS
+Gibraltar Pound 	GIP
+Euro 	EUR
+Danish Krone 	DKK
+East Caribbean Dollar 	XCD
+Euro 	EUR
+US Dollar 	USD
+Quetzal 	GTQ
+Pound Sterling 	GBP
+Guinea Franc 	GNF
+Guinea-Bissau Peso 	GWP
+Guyana Dollar 	GYD
+Gourde 	HTG
+Australian Dollar 	AUD
+Euro 	EUR
+Lempira 	HNL
+Hong Kong Dollar 	HKD
+Forint 	HUF
+Iceland Krona 	ISK
+Indian Rupee 	INR
+Rupiah 	IDR
+Iranian Rial 	IRR
+Iraqi Dinar 	IQD
+Euro 	EUR
+Pound Sterling 	GBP
+New Israeli Sheqel 	ILS
+Euro 	EUR
+Jamaican Dollar 	JMD
+Yen 	JPY
+Pound Sterling 	GBP
+Jordanian Dinar 	JOD
+Tenge 	KZT
+Kenyan Shilling 	KES
+Australian Dollar 	AUD
+North Korean Won 	KPW
+Won 	KRW
+Kuwaiti Dinar 	KWD
+Som 	KGS
+Kip 	LAK
+Euro 	EUR
+Lebanese Pound 	LBP
+Loti 	LSL
+Liberian Dollar 	LRD
+Libyan Dinar 	LYD
+Swiss Franc 	CHF
+Lithuanian Litas 	LTL
+Euro 	EUR
+Pataca 	MOP
+Denar 	MKD
+Malagasy Ariary 	MGA
+Kwacha 	MWK
+Malaysian Ringgit 	MYR
+Rufiyaa 	MVR
+CFA Franc BCEAO  	XOF
+Euro 	EUR
+US Dollar 	USD
+Euro 	EUR
+Ouguiya 	MRO
+Mauritius Rupee 	MUR
+Euro 	EUR
+Mexican Peso 	MXN
+US Dollar 	USD
+Moldovan Leu 	MDL
+Euro 	EUR
+Tugrik 	MNT
+Euro 	EUR
+East Caribbean Dollar 	XCD
+Moroccan Dirham 	MAD
+Mozambique Metical 	MZN
+Kyat 	MMK
+Namibia Dollar 	NAD
+Australian Dollar 	AUD
+Nepalese Rupee 	NPR
+Euro 	EUR
+Netherlands Antillean Guilder 	ANG
+CFP Franc 	XPF
+New Zealand Dollar 	NZD
+Cordoba Oro 	NIO
+CFA Franc BCEAO  	XOF
+Naira 	NGN
+New Zealand Dollar 	NZD
+Australian Dollar 	AUD
+US Dollar 	USD
+Norwegian Krone 	NOK
+Omani Rial 	OMR
+Pakistan Rupee 	PKR
+US Dollar 	USD
+No universal 	currency
+Balboa 	PAB
+Kina 	PGK
+Guarani 	PYG
+Nuevo Sol 	PEN
+Philippine Peso 	PHP
+New Zealand Dollar 	NZD
+Zloty 	PLN
+Euro 	EUR
+US Dollar 	USD
+Qatari Rial 	QAR
+Euro 	EUR
+New Romanian Leu 	RON
+Russian Ruble 	RUB
+Rwanda Franc 	RWF
+Euro 	EUR
+Saint Helena Pound 	SHP
+East Caribbean Dollar 	XCD
+East Caribbean Dollar 	XCD
+Euro 	EUR
+Euro 	EUR
+East Caribbean Dollar 	XCD
+Tala 	WST
+Euro 	EUR
+Dobra 	STD
+Saudi Riyal 	SAR
+CFA Franc BCEAO  	XOF
+Serbian Dinar 	RSD
+Seychelles Rupee 	SCR
+Leone 	SLL
+Singapore Dollar 	SGD
+Netherlands Antillean Guilder 	ANG
+Euro 	EUR
+Euro 	EUR
+Solomon Islands Dollar 	SBD
+Somali Shilling 	SOS
+Rand 	ZAR
+No universal 	currency
+South Sudanese Pound 	SSP
+Euro 	EUR
+Sri Lanka Rupee 	LKR
+Sudanese Pound 	SDG
+Surinam Dollar 	SRD
+Norwegian Krone 	NOK
+Lilangeni 	SZL
+Swedish Krona 	SEK
+Swiss Franc 	CHF
+Syrian Pound 	SYP
+New Taiwan Dollar 	TWD
+Somoni 	TJS
+Tanzanian Shilling 	TZS
+Baht 	THB
+US Dollar 	USD
+CFA Franc BCEAO  	XOF
+New Zealand Dollar 	NZD
+Pa'anga 	TOP
+Trinidad and Tobago Dollar 	TTD
+Tunisian Dinar 	TND
+New Turkish Lira 	TRY
+Turkmenistan New Manat 	TMM
+US Dollar 	USD
+Australian Dollar 	AUD
+Uganda Shilling 	UGX
+Hryvnia 	UAH
+UAE Dirham 	AED
+Pound Sterling 	GBP
+US Dollar 	USD
+US Dollar 	USD
+Peso Uruguayo 	UYU
+Uzbekistan Sum 	UZS
+Vatu 	VUV
+Bolivar 	VEF
+Dong 	VND
+US Dollar 	USD
+US Dollar 	USD
+CFP Franc 	XPF
+Moroccan Dirham 	MAD
+Yemeni Rial 	YER
+Kwacha 	ZMK
+Zimbabwe Dollar 	ZWD
