@@ -81,7 +81,8 @@ except:
 The output file will be named as Result of [input_filename].
 The output file for every test case will have 9 lines which will contain 9 integer between 1 to 9, 
 denoting the values of cells in 9x9 sudoku in standard (rows)x(columns) format of matrices. 
-The program is not intended to check if a from a given possible constraints a sudoku can be formed or not.
+The program is not intended to check if from a given possible constraints a sudoku can be formed or not 
+and works as desired only for test cases for which a valid solution exists.
 '''
 
 #Reading Input from the text file.
