@@ -108,9 +108,7 @@ def equationSolver(sys_Eq, rows, cols):
     for x in range(cols):
         result.append('')
     
-#    for x in range(row):
-#        for y in range(col):
-#            print(fracObjs[x][y])
+
         
     #Finding the values of num_var variables.
     for i in range(row):
