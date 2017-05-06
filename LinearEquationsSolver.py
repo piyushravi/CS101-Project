@@ -1,5 +1,5 @@
 #CS101 Project
-#Linear equations solver with integer coefficients.
+#Linear equations solver using Gaussian elimination for equations with integer coefficients. 
 #Python 3.6
 
 import sys, os
@@ -66,6 +66,8 @@ def equationSolver(sys_Eq, rows, cols):
     #Converting the augmented matrix sys_Eq to row reduced echleon form
     row=rows
     col=cols+1 #Considering the augmented matrix.
+    
+    #Row reducing to ehcelon form using Gaussian Elimination
     for i in range(row):
         for j in range(col):
             if sys_Eq[i][j]!=0:
