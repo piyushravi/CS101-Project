@@ -86,6 +86,7 @@ def equationSolver(sys_Eq, rows, cols):
             temp.append([])
         fracObjs.append(temp)
     
+    num_2=0
     for i in range(row):
         for j in range(col):
             if sys_Eq[i][j]!=0:
