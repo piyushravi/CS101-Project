@@ -105,9 +105,9 @@ for x in range(N):
         ctr+=1
         for num in temp:
             if num==0:
-                adder.append([num, False])
+                adder.append([num, False]) #False denotes that the value of the cell is mutable.
             else:
-                adder.append([num, True])
+                adder.append([num, True]) #True denotes that value of the cell is immutable.
         sudo.append(adder)
                 
     wfile.write("Solution to Case #"+str(x+1)+": \n")
