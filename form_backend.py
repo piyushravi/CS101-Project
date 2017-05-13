@@ -12,42 +12,37 @@ name = form.getvalue('name')
 ashoka_id = form.getvalue('ashoka_id')
 e_number  = form.getvalue('e_number')
 mobile = form.getvalue('mobile')
+id=form.getvalue('id')
 print "Content-type:text/html\r\n\r\n"
 print "<html>"
 print "<head>"
 print "<title>Shuttle Bookings</title>"
 print "</head>"
-sql = 'SELECT e_number FROM seats'
-cursor.execute(sql)
+registers = 'SELECT e_number FROM seats'
+
+cursor.execute(registers)
 # Fetch all the rows in a list of lists.
-results = cursor.fetchall()
-
-for i in results:
-
-
-	if i[0]==int(e_number):
+result_register = cursor.fetchall()
+print result_register
+for i in result_register:
+	
+	if int(i[0])==int(e_number):
 		print "User Exists"
 		print "\n"
 		print "<a href=/programs/SignUp.html>Re-Register</a>"    
-		break	
-	else:
-		if int(id)==20:
-			print "Content-type:text/html\r\n\r\n"
-
-			print "Full"
-			break	
-
+		break
 else:
-	print "Content-type:text/html\r\n\r\n"
+	
 
 	print "Welcome"
-	addName="INSERT INTO seats (name,ashoka_id,e_number,mobile) VALUES ('%s',%s',d,d)" % (name, ashoka_id , e_number , mobile)
+	addName="""INSERT INTO seats (name,ashoka_id,e_number,mobile) VALUES ('%s','%s','%s','%s')""" % (name, ashoka_id , e_number , mobile)
+#addName="""INSERT INTO seats (name,ashoka_id,e_number,mobile) VALUES (abc,def,hgi,zxc)"""
 	cursor.execute(addName)
-	print "Content-type:text/html\r\n\r\n"
+	cnn.commit()
+	cnn.close()
 #print "<a href='/cgi-bin/getdata.py'> Check Availability </a>"
 print "<body>"
 #print "<h2> Hello %s %s %s %s %s %s %s %s </h2>" % (first_name,last_name,middle_name,mobile,day,month,year,qualification)
+
 print "</body>"
 print "</html>"
-cnn.commit()
-cnn.close()
