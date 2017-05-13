@@ -21,3 +21,4 @@ This web based application can be used to book the next shuttle at ashoka, on th
 We plan on increasing the scope of the code by incorporating auto generated emails 10 minutes before the shuttle time, we were able to get that part to work on a smaller scale, though the Id entered in the table of SQL wasn't directly usable. We made a small mass emailer which can be emailed to anyone requiring the prototype, till the time it is incorporated with the scheduler. 
 For proper functioning, the python file has to be stored in the cgi-bin folder while the html file in the programs folder under XAMPP after being downloaded, when in running condition. 
 https://www.apachefriends.org/download.html  - XAMPP can be downloaded here
+This code works on safari browser on mac, it runs under local host web address. Rest is like a normal applcation.
