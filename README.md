@@ -3,9 +3,10 @@
 
 Our consits of solvers for a system of linear equations and sudoku, shuttle booking system, and currency convertor of listed currencies using Yahoo finance API. 
 
-The file SudokuSolver.py, the solver for sudoku, takes input from a text file, say input_filename, and writes the ouput into another text file named as 'Result of [input_filename]'.
+The file SudokuSolver.py, the solver for sudoku, takes input from a text file, say input_filename, and writes the ouput into another text file named as 'Result of [input_filename]'. 
 Some test cases and their output is attached in a zipped folder named SudokuSolver_Testcases.zip.
-The second test case of in1.txt in the zipped folder took about three hours to be solved. The test case is taken from Wikipedia and is designed to work against backtracking method.
+The second test case of in1.txt in the zipped folder took about three hours to be solved. The test case is taken from Wikipedia and is designed to work against backtracking method. 
+The empty spaces are marked by a 0 while the values already filled are with the number as there.
 
 The file LinearEquationsSolver.py, the solver for a system of linear equations, takes input from text file, say input_filename, and writes the output into a text file named 'Result of [input_filename]'.
 Some test cases and their result is attached in zipped folder named LinearEquationsSolver_TestCases.zip.
