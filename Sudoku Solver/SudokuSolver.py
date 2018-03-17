@@ -1,12 +1,14 @@
 #CS101 Project
 #Python 3.6
+#Sudoku solver Using Bijective Mapping.
 #Sudoku Solver Using Backtracking
 
 import sys, os
+from bijectiveFunction import bijectiveFunction
 
 '''
 The standard input textfile will contain an integer N in the first line, denoting the number of sudokus to be solved.
-The next 9*N lines will contain 9 integers each, each line denoting a row of a sudoku. 
+The next 9*N lines will contain 9 integers each, each line denoting a row of a sudoku.
 The integers should be between 0 to 9, with 0 denoting an unfilled cell of sudoku.
 '''
 #Checks if any of the constraints are violated.
@@ -15,12 +17,12 @@ def isValid(sudo, ind):
     for x in range(9):
         if sudo[ind[0]][x][0]==sudo[ind[0]][ind[1]][0] and x!=ind[1]:
             return False
-    
+
     #Checks for column.
     for x in range(9):
         if sudo[x][ind[1]][0]==sudo[ind[0]][ind[1]][0] and x!=ind[0]:
             return False
-    
+
     #Checks for 3x3 box.
     x=3*(ind[0]//3)
     y=3*(ind[1]//3)
@@ -28,22 +30,22 @@ def isValid(sudo, ind):
         for j in range(y, y+3):
             if sudo[i][j][0]==sudo[ind[0]][ind[1]][0] and [i, j]!=ind:
                 return False
-    
+
     return True
-    
+
 
 def sudokuSolver(sudo):
-    
+
     #Initialization
     ind=None
     for x in range(81):
         if sudo[x//9][x%9][0]==0:
             ind=[x//9, x%9]
             break
-    
+
     if ind==None:
         return sudo
-    
+
     while True:
         if sudo[ind[0]][ind[1]][0]<9:
             sudo[ind[0]][ind[1]][0]+=1
@@ -55,20 +57,33 @@ def sudokuSolver(sudo):
                         ind=[x//9, x%9]
                         break
         else:
-            
-            sudo[ind[0]][ind[1]][0]=0 
+
+            sudo[ind[0]][ind[1]][0]=0
             ctr=ind[0]*9+ind[1]-1
-            ind=None       
+            ind=None
             for x in range(ctr, -1, -1):
                 if sudo[x//9][x%9][1]==False:
                     ind=[x//9, x%9]
                     break
-            
+
         if ind==None:
             return sudo
-        
-             
-    
+
+
+def bijectiveMappingSudokuSolver(stdSudoku, constraints):
+
+    sudoMapper = bijectiveFunction(constraints)
+    res = []
+    if sudoMapper[0]:
+
+        for x in range(9):
+            temp = []
+            for y in range(9):
+                temp.append(sudoMapper[stdSudoku[x][y]-1])
+        res.append(temp)
+
+
+    return res
 
 filename=''
 try:
@@ -76,21 +91,100 @@ try:
 except:
     while filename=='' or not os.path.exists(filename):
         filename=input("Enter a valid input text filename:")
-        
+
 '''
 The output file will be named as Result of [input_filename].
-The output file for every test case will have 9 lines which will contain 9 integer between 1 to 9, 
-denoting the values of cells in 9x9 sudoku in standard (rows)x(columns) format of matrices. 
-The program is not intended to check if from a given possible constraints a sudoku can be formed or not 
+The output file for every test case will have 9 lines which will contain 9 integer between 1 to 9,
+denoting the values of cells in 9x9 sudoku in standard (rows)x(columns) format of matrices.
+The program is not intended to check if from a given possible constraints a sudoku can be formed or not
 and works as desired only for test cases for which a valid solution exists.
 '''
 
 #Reading Input from the text file.
+#Solving using bijective mapping.
+
+#Read standard sudoku from stdInput.txt
+stdSudoku = []
+with open('stdInput.txt', 'r') as ifile:
+    inp = ifile.readlines()
+    ctr=0
+    while ctr<9:
+        temp = list(map(int, inp[ctr].split()))
+        stdSudoku.append(temp)
+        ctr += 1
+
+
+
+
+with open(filename, 'r') as ifile:
+    inp = ifile.readlines()
+
+
+
+wfile=open('outBM'+filename+'.txt', 'w')
+
+ctr = 0
+N=int(inp[ctr])
+ctr += 1
+
+#Solving N Sudokus.
+for x in range(N):
+    sudo = []
+    constraints = {}
+    flagNext = False
+
+    for y in range(9):
+        adder = []
+        temp = list(map(int, inp[ctr].split()))
+        ctr += 1
+        for z in range(9):
+            if temp[z] != 0:
+                try:
+                    if constraints[stdSudoku[y][z]] != temp[z]:
+                        wfile.write("Solution to Case #"+str(x+1)+": \n")
+                        wfile.write("There are conflicting constraint(s) [not a function].\n")
+                        flagNext = True
+                        break
+                except:
+
+                    constraints[stdSudoku[y][z]] = temp[z]
+
+        if flagNext:
+            break
+
+    if flagNext:
+        continue
+
+
+    wfile.write("Solution to Case #"+str(x+1)+": \n")
+    sudo = bijectiveMappingSudokuSolver(stdSudoku, constraints)
+
+    if sudo != []:
+
+        for y in sudo:
+            res=''
+            for values in y:
+                res+=str(values[0])
+                res+=' '
+                wfile.write(res[:-1]+"\n")
+
+
+    else:
+        wfile.write("There are conflicting constraint(s) [not one-one].\n")
+
+    print('Completed Test Case '+str(x+1)+'!!\n')
+
+
+wfile.close()
+
+
+#Reading Input from the text file.
+#Solving through brute-force.
 with open(filename, 'r') as ifile:
     inp=ifile.readlines()
 
 
-wfile=open('out.txt', 'w')
+wfile=open('outBF'+filename+'.txt', 'w')
 
 ctr=0
 N=int(inp[ctr])
@@ -99,6 +193,7 @@ ctr+=1
 #Solving N Sudokus.
 for x in range(N):
     sudo=[]
+
     for y in range(9):
         adder=[]
         temp=list(map(int, inp[ctr].split()))
@@ -108,11 +203,12 @@ for x in range(N):
                 adder.append([num, False]) #False denotes that the value of the cell is mutable.
             else:
                 adder.append([num, True]) #True denotes that value of the cell is immutable.
+
         sudo.append(adder)
-                
+
     wfile.write("Solution to Case #"+str(x+1)+": \n")
     sudo=sudokuSolver(sudo)
-    
+
     for y in sudo:
         res=''
         for values in y:
@@ -120,10 +216,6 @@ for x in range(N):
             res+=' '
         wfile.write(res[:-1]+"\n")
     print('Completed Test Case '+str(x+1)+'!!\n')
-    
-        
+
+
 wfile.close()
-    
-        
-    
-    
